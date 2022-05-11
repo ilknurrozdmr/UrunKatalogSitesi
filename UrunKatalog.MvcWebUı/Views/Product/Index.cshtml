@@ -1,0 +1,81 @@
+﻿@model IEnumerable<UrunKatalog.MvcWebUı.Entity.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container pb-5">
+    <h2>Yeni Ürün</h2>
+    <hr/>
+    <p>
+        @Html.ActionLink("Yeni Ürün", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsHome)
+            </th>
+            <th style="width:140px;">
+                @Html.DisplayNameFor(model => model.IsApproved)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="/Upload/@item.Image" width="70"/>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @if (item.IsHome)
+                    {
+                        <label class="badge badge-success">
+                            <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
+                        Evet
+                        </label>
+                    }
+                    else
+                    {
+                        <label class="badge badge-danger">
+                            <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
+                        Hayır
+                        </label>
+                    }
+                </td>
+                <td>
+                    @if (item.IsApproved)
+                    {
+                        <label class="badge badge-success">
+                            <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
+                            Evet
+                        </label>
+                    }
+                    else
+                    {
+                        <label class="badge badge-danger">
+                            <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
+                            Hayır
+                        </label>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Güncelle", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+                    @Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

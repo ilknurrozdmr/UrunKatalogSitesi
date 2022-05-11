@@ -1,0 +1,46 @@
+﻿@model IEnumerable<UrunKatalog.MvcWebUı.Entity.Category>
+@{ 
+    var selectedCategory = Url.RequestContext.RouteData.Values["id"];
+}
+
+<ul class="list-group">
+        <a href="/Home/List" class="list-group-item">
+            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/18/3498DB/external-right-arrow-flatart-icons-outline-flatarticons-1.png" />
+            Tüm Kategoriler
+        </a>
+ 
+    
+
+    @foreach (var item in Model)
+    {
+        if (selectedCategory != null)
+        {
+            if (item.Id == int.Parse(selectedCategory.ToString()))
+            {
+                //seçilen kategori ile route id si birbirine eşit.
+                <a href="/Home/List/@item.Id" class="list-group-item active">
+                        <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/18/3498DB/external-right-arrow-flatart-icons-outline-flatarticons-1.png" />
+                        @item.Name
+                 </a>
+                
+            }
+            else
+            {
+                <a href="/Home/List/@item.Id" class="list-group-item">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/18/3498DB/external-right-arrow-flatart-icons-outline-flatarticons-1.png" />
+                    @item.Name
+                </a>
+            }
+        }
+        else
+        {
+                <a href="/Home/List/@item.Id" class="list-group-item">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/18/3498DB/external-right-arrow-flatart-icons-outline-flatarticons-1.png" />
+                    @item.Name
+                </a>
+        }
+
+    }
+
+</ul>
+

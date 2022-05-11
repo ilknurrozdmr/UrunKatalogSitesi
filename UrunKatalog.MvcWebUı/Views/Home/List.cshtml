@@ -1,0 +1,33 @@
+﻿@using UrunKatalog.MvcWebUı.Models;
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "List";
+}
+
+<div class="container pb-5">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Action("GetCategories","Home")
+        </div>
+        <div class="col-md-9">
+            @if (Model.Count() == 0)
+            {
+                <div class="alert alert-warning" role="alert">
+                    <img src="https://img.icons8.com/ios/25/000000/error--v1.png" />
+                    Bu kategoride ürün bulunamadı.
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-success" role="alert">
+                    <img src="https://img.icons8.com/color/30/000000/check-all--v1.png" />
+                    @Model.Count() adet ürün bulundu.
+                </div>
+            }
+
+            @Html.Partial("_ProductList", Model)
+
+        </div>
+    </div>
+
+</div>
