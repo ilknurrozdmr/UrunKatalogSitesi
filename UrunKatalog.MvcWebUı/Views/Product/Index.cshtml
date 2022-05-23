@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="container pb-5">
@@ -24,57 +25,61 @@
             <th>
                 @Html.DisplayNameFor(model => model.IsHome)
             </th>
-            <th style="width:140px;">
+            <th>
                 @Html.DisplayNameFor(model => model.IsApproved)
             </th>
+            <th style="width:140px;"></th>
         </tr>
 
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    <img src="/Upload/@item.Image" width="70"/>
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @if (item.IsHome)
-                    {
-                        <label class="badge badge-success">
-                            <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
+        <tr>
+            <td>
+                <img src="/Upload/@item.Image" width="70" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @if (item.IsHome)
+                {
+                    <label class="badge badge-success">
+                        <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
                         Evet
-                        </label>
-                    }
-                    else
-                    {
-                        <label class="badge badge-danger">
-                            <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
+                    </label>
+                }
+                else
+                {
+                    <label class="badge badge-danger">
+                        <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
                         Hayır
-                        </label>
-                    }
-                </td>
-                <td>
-                    @if (item.IsApproved)
-                    {
-                        <label class="badge badge-success">
-                            <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
-                            Evet
-                        </label>
-                    }
-                    else
-                    {
-                        <label class="badge badge-danger">
-                            <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
-                            Hayır
-                        </label>
-                    }
-                </td>
-                <td>
-                    @Html.ActionLink("Güncelle", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
-                    @Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
-                </td>
-            </tr>
+                    </label>
+                }
+            </td>
+            <td>
+                @if (item.IsApproved)
+                {
+                    <label class="badge badge-success">
+                        <img src="https://img.icons8.com/pastel-glyph/15/FFFFFF/checked--v4.png" />
+                        Evet
+                    </label>
+                }
+                else
+                {
+                    <label class="badge badge-danger">
+                        <img src="https://img.icons8.com/ios/16/FFFFFF/cancel.png" />
+                        Hayır
+                    </label>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Güncelle", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+                @Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
         }
 
     </table>

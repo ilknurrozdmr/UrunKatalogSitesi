@@ -10,6 +10,7 @@ using UrunKatalog.MvcWebUı.Entity;
 
 namespace UrunKatalog.MvcWebUı.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class CategoryController : Controller
     {
         private DataContext db = new DataContext();

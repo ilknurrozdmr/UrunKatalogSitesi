@@ -1,0 +1,18 @@
+﻿@using UrunKatalog.MvcWebUı.Models
+@model UrunKatalog.MvcWebUı.Models.Cart
+
+<style>
+    #cart{
+        color:white;
+    }
+</style>
+
+<ul class="navbar-nav my-2 my-lg-0">
+        <li id="cart" class="nav-item">
+            <a class="nav-link" href="/Cart">
+                <img src="https://img.icons8.com/windows/30/ffffff/shopping-cart-loaded--v1.png" />
+                (@Model.CartLines.Count)
+            </a>
+        </li>
+</ul>
+
