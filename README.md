@@ -1,9 +1,9 @@
 Admin ve Kullanıcı paneli temel bir e-ticaret sitesi işlemlerinin gerçekleştiği ürün katalog uygulamasıdır. 
 
+![1](https://user-images.githubusercontent.com/43750397/173112878-1bc3c448-c76f-4791-bda4-e8c277962ab2.png)
 
+![2](https://user-images.githubusercontent.com/43750397/173112883-5083fdb6-2809-4711-835f-ed63d941c815.png)
 
-![3](https://user-images.githubusercontent.com/43750397/173112035-d6d4690b-1d1e-432f-aabb-a804ba6ae875.png)
+![3](https://user-images.githubusercontent.com/43750397/173112887-d2ee188c-2dff-45f4-8545-47ad7dbbc151.png)
 
-![1](https://user-images.githubusercontent.com/43750397/173112042-f39631d6-cff5-492a-9e85-fc0e8188448c.png)
-
-![2](https://user-images.githubusercontent.com/43750397/173112047-ef1cd286-ca89-43f8-82c8-45483b06690d.png)
+![4](https://user-images.githubusercontent.com/43750397/173112894-95abd327-5f52-4688-ae8e-f68199fb9d13.png)
