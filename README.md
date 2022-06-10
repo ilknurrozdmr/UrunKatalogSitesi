@@ -1,7 +1,9 @@
-Temel bir e-ticaret sitesi işlemlerinin gerçekleştiği ürün katalog uygulamasıdır. 
+Admin ve Kullanıcı paneli temel bir e-ticaret sitesi işlemlerinin gerçekleştiği ürün katalog uygulamasıdır. 
 
-![Adsız2](https://user-images.githubusercontent.com/43750397/173108984-9a6107e6-c37f-41f5-aa78-633a3dba0980.png)
+![4](https://user-images.githubusercontent.com/43750397/173112029-b4c2a2b7-eb96-4056-936d-f27886999f9d.png)
 
-![Adsız](https://user-images.githubusercontent.com/43750397/173108986-380e368e-9cb0-43d0-b7a3-d4112a1c01d4.png)
+![3](https://user-images.githubusercontent.com/43750397/173112035-d6d4690b-1d1e-432f-aabb-a804ba6ae875.png)
 
-![Adsız1](https://user-images.githubusercontent.com/43750397/173108990-a386db29-237d-4865-9cb3-a7a39abce0a8.png)
+![1](https://user-images.githubusercontent.com/43750397/173112042-f39631d6-cff5-492a-9e85-fc0e8188448c.png)
+
+![2](https://user-images.githubusercontent.com/43750397/173112047-ef1cd286-ca89-43f8-82c8-45483b06690d.png)
