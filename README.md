@@ -1,4 +1,4 @@
-Admin ve Kullanıcı paneli temel bir e-ticaret sitesi işlemlerinin gerçekleştiği ürün katalog uygulamasıdır. 
+Admin ve Kullanıcı panelli Entity Framework, Linq, SQL, Bootstrap, Css, Html5 ile geliştirilmiş temel bir e-ticaret sitesi işlemlerinin gerçekleştiği ürün katalog uygulamasıdır. 
 
 ![1](https://user-images.githubusercontent.com/43750397/173112878-1bc3c448-c76f-4791-bda4-e8c277962ab2.png)
 
